@@ -1,0 +1,804 @@
+/******************************************************************** 
+I declare that my assignment is wholly my own work in accordance with Seneca 
+Academic Policy. No part of this assignment has been copied manually or 
+electronically from any other source (including web sites) except for the 
+information supplied by the WEB222 instructors and / or made available in this 
+assignment for my use. 
+I also declare that no part of this assignment has been distributed to other 
+students. 
+Name: Malav Jignesh Shah
+Dated: 4/3/2020
+********************************************************************/
+
+* {box-sizing: border-box;}
+
+/* BODY CSS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER CSS BEGINS FROM HERE */
+ 
+ a{
+	 color: black;
+ }
+ 
+ a:hover{
+	 text-decoration: none;
+ }
+ 
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.header .nav {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  margin: 0px 3px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header .nav:hover{
+    background-color: orange;
+}
+
+.header a:hover {
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* EXTERNAL CALL TO ACTION BUTTONS */
+
+.header .external-nav{
+  display: none;
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px;
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+  margin-right: 90px;
+  padding-top: 20px;
+}
+
+.header-left {
+    float: left;
+    margin-left: 20px;
+}
+
+.header .demo{
+    background-color: lime;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
+
+/* MOBILE MENU BUTTON CSS*/
+
+.mobilenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 20px;
+}
+
+.mobilenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.mobilenav a:hover {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+}
+
+.mobilenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  float: left;
+  left: 0;
+}
+
+.opennav{
+  font-size:30px;
+  cursor:pointer;
+  display: none;
+}
+
+.active {
+  background-color: #00ff1c;
+  color: black;
+}
+
+  /* CENTER CSS */
+
+  .center{
+    text-align: center;
+    margin: auto;
+  }
+
+  /* BACKGROUND IMAGE CSS */
+
+  .back_img{
+      display: block;
+      width: 100%;
+      background-color: blanchedalmond;
+      padding: 20px;
+      padding-bottom: 40px;
+      background-image: url(../images/back2.jpg);
+      background-repeat: repeat;
+      color: white; 
+  }
+
+  /* CREDIT GIVEN CSS */
+
+  .right{
+      float: right;
+      color: black;
+  }
+
+  .right a{
+      color: grey;
+      padding: 0px;
+  }
+  
+  .right2{
+	  float: right;
+	  padding: 20px;
+	  color: grey;
+  }
+  
+  .right2 a{
+      color: grey;
+      padding: 0px;
+  }
+
+  /* IMAGES CSS */
+
+  .aimg{
+      width: 250px;
+      height: 300px;
+      padding: 20px;
+      border: 3px solid black;
+      margin: 20px;
+      border-radius: 12px;
+      display: inline-block;
+      position: relative;
+  }
+
+  .aimg img{
+    width: 200px;
+    height: 260px;
+  }
+
+  .window {
+    left: 0;
+    right: 0;
+    transition: .5s ease;
+    display: inline-block;
+    background-color: #008CBA;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    height:0;
+    border-radius: 9px;
+  }
+  
+  .aimg:hover .window {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .content {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 33.33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* QUOTE BUTTON CSS */
+
+  .quote {
+    float: none;
+    color: black;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 25px;
+    background-color: orange;
+    box-shadow: 0px 0px 15px 10px dodgerblue; 
+    margin-bottom: 10px;
+  }
+
+  /* VIEW MORE BUTTON CSS*/
+  .more {
+    float: none;
+    color: black;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: large; 
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: orange;
+    margin-bottom: 10px;
+  }
+
+  /* QUESTION-ANSWER CSS*/
+
+  .q_a {
+    background-color: white;
+    padding: 80px 100px;
+    margin: 0 auto;
+  }
+
+  .width_left{
+    color: white;
+    background-color: #4d0909;
+    font-size: large;
+    top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+    padding: 30px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .width_left:hover {
+    transform: scale(1.1);
+  }
+  
+  .width_left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  .width_left h6{
+    font-style: italic;
+    color: white;
+    font-size: small;
+    margin-bottom: 17px;
+  }
+
+  .width_left button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 20px 20px 8px;
+    border: 1px solid white;
+    margin-bottom: 38px;
+  }
+
+  .width_left2{
+    color: white;
+    background-color: #4d0909;
+    font-size: large;
+    top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+    padding: 30px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .width_left2:hover {
+    transform: scale(1.1);
+  }
+  
+  .width_left2 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  .width_left2 h6{
+    font-style: italic;
+    color: white;
+    font-size: small;
+    margin-bottom: 17px;
+  }
+
+  .width_left2 button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 20px 20px 8px;
+    border: 1px solid white;
+    margin-bottom: 70px;
+  }
+
+  .width_right{
+    color: white;
+    background-color: #0c590c;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+    padding: 30px;
+    line-height: 30px;
+    float: right;
+  }
+
+  .width_right:hover {
+    transform: scale(1.1);
+  }
+
+  .width_right button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 20px 20px 8px;
+    border: 1px solid white;
+    float: right;
+    margin: 0 5px 0 0;
+  }
+
+  .q_a hr{
+    width: 50%;
+    border: 1px solid black;
+  }
+
+  /* HOVER TO VIEW BUTTON CSS */
+
+  .view {
+    padding: 15px 25px;
+    font-size: 18px;
+    margin-top: 25px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: rgb(255, 213, 27);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .view:hover {
+      background-color: rgb(255, 167, 5);
+      color: white;
+}
+
+  /* BLOCK CSS */
+
+  .block{
+      display: block;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   font-size: 20px;
+   padding-top: 35px;
+}
+
+   .footer button{
+		text-decoration: none;
+		border: none;
+	}
+
+   .fa {
+	padding: 20px;
+	font-size: 50px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	}
+
+   .fa:hover {
+	opacity: 0.7;
+	}
+
+	.size{
+	font-size: 14px;
+	}
+
+   /* FACEBOOK CSS */
+   
+   .fa-facebook {
+	background: #3B5998;
+  color: white;
+  font-size: 50px;
+	}
+
+   /* TWITTER CSS */
+   
+   .fa-twitter {
+	background: #55ACEE;
+	color: white;
+	}
+
+	/* LINKEDIN CSS */
+	
+   .fa-linkedin {
+	background: #007bb5;
+	color: white;
+	}
+
+	/* INSTAGRAM CSS */
+	
+   .fa-instagram {
+	background: #125688;
+	color: white;
+	}
+
+	/* PINTEREST CSS */
+	
+   .fa-pinterest {
+	background: #cb2027;
+	color: white;
+  }
+
+  .hid{
+    display: none;
+  }
+
+  /* RESPONSIVE CSS */
+
+  /* Devices having width 600px or less than it */
+    
+  @media only screen and (max-width: 600px) {
+    .header{
+      width: 100%;
+      position: absolute;
+      padding: 0px;
+    }
+
+    .header-left{
+      margin: auto;
+      width: 100%;
+      display: block;
+      float: initial;
+    }
+
+    .header .external-nav{
+      display: none;
+    }
+
+    .hid{
+      display: block;
+    }
+
+    .opennav{
+      display: block;
+      padding: 5px 10px;
+      background-color: #111;
+      color: white;
+      float: left;
+      margin-top: 25px;
+    }
+
+    .header .nav{
+      display: none;
+    }
+
+    .header img{
+      margin: auto;
+      margin-top: 15px;
+      margin-left: 15px;
+      display: inline-block;
+    }
+
+    .center h2{
+      font-size: 27px;
+    }
+
+    .aimg {
+      width: 240px;
+      height: 290px;
+      display: inline-table;
+    }
+
+    .aimg img{
+      width: 200px;
+      height: 250px;
+    }
+
+    .view{
+      font-size: 14px;
+      box-shadow: 0 6px #999;
+    }
+
+    .q_a{
+      padding: 8px;
+      width: 100%;
+    }
+
+    .width_left{
+      margin-bottom: 10px;
+    }
+
+    .width_left:hover{
+      transform: scale(1.0);
+    }
+
+    .width_left2{
+      margin-bottom: 10px;
+    }
+
+    .width_left2:hover{
+      transform: scale(1.0);
+    }
+
+    .width_right{
+      margin-bottom: 10px;
+    }
+
+    .width_right:hover{
+      transform: scale(1.0);
+    }
+
+    .footer{
+      display: inline-block;
+    }
+
+  }
+
+    /* Devices having width between 599px to 800px */
+    
+  @media only screen and (max-width: 800px) and (min-width: 599px) {
+    .header{
+      width: 100%;
+      position: absolute;
+      padding: 0px;
+    }
+
+    .header-left{
+      margin: auto;
+      width: 100%;
+      float: initial;
+    }
+
+    .opennav{
+      display: block;
+      padding: 5px 10px;
+      background-color: #111;
+      color: white;
+      float: left;
+      margin-top: 25px;
+    }
+
+    .header .nav{
+      display: none;
+    }
+
+    .mobilenav .hid{
+      display: none;
+    }
+
+    .header img{
+      margin: auto;
+      margin-top: 15px;
+      margin-left: 15px;
+      display: inline-block;
+    }
+
+    .header .external-nav{
+      display: block;
+      float: right;
+    }
+
+    .center h2{
+      font-size: 27px;
+    }
+
+    .aimg {
+      width: 240px;
+      height: 290px;
+      display: inline-table;
+    }
+
+    .aimg img{
+      width: 200px;
+      height: 250px;
+    }
+
+    .view{
+      font-size: 14px;
+      box-shadow: 0 6px #999;
+    }
+
+    .q_a{
+      padding: 8px;
+      width: 100%;
+      display: grid;
+    }
+
+    .width_left{
+      margin-bottom: 10px;
+    }
+
+    .width_left:hover{
+      transform: scale(1.0);
+    }
+
+    .width_left2{
+      margin-bottom: 10px;
+    }
+
+    .width_left2:hover{
+      transform: scale(1.0);
+    }
+
+    .width_right{
+      margin-bottom: 10px;
+    }
+
+    .width_right:hover{
+      transform: scale(1.0);
+    }
+
+    .footer{
+      display: inline-block;
+    }
+
+  }
+
+    /* Devices having width between 799px to 1400px */
+
+    @media only screen and (max-width: 1400px) and (min-width: 799px) {
+      .header{
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+      }
+  
+      .header-left{
+        margin: auto;
+        width: 100%;
+        float: initial;
+      }
+
+      .header-right{
+        margin-right: 0px;
+      }
+  
+      .opennav{
+        display: block;
+        padding: 5px 10px;
+        background-color: #111;
+        color: white;
+        float: left;
+        margin-top: 25px;
+      }
+  
+      .header .nav{
+        display: none;
+      }
+  
+      .mobilenav .hid{
+        display: none;
+      }
+  
+      .header img{
+        margin: auto;
+        margin-top: 15px;
+        margin-left: 15px;
+        display: inline-block;
+      }
+  
+      .header .external-nav{
+        display: block;
+        float: right;
+      }
+  
+      .center h2{
+        font-size: 27px;
+      }
+  
+      .aimg {
+        width: 240px;
+        height: 290px;
+        display: inline-table;
+      }
+  
+      .aimg img{
+        width: 200px;
+        height: 250px;
+      }
+  
+      .view{
+        font-size: 14px;
+        box-shadow: 0 6px #999;
+      }
+  
+      .q_a{
+        padding: 8px;
+        width: 100%;
+        display: grid;
+      }
+  
+      .width_left{
+        margin-bottom: 10px;
+      }
+  
+      .width_left:hover{
+        transform: scale(1.0);
+      }
+  
+      .width_left2{
+        margin-bottom: 10px;
+      }
+  
+      .width_left2:hover{
+        transform: scale(1.0);
+      }
+  
+      .width_right{
+        margin-bottom: 10px;
+      }
+  
+      .width_right:hover{
+        transform: scale(1.0);
+      }
+  
+      .footer{
+        display: inline-block;
+      }
+
+    /*  question 4 is remaining
+        github site upload check fot it? 
+        create separate file for js?
+    */
+  }
