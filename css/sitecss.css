@@ -191,6 +191,17 @@ body {
       padding: 0px;
   }
 
+  .right3{
+    font-size: 11px;
+    float: right;
+    color: black;
+  }
+
+  .right3 a{
+    color: grey;
+    padding: 0px;
+  }
+
   /* IMAGES CSS */
 
   .aimg{
@@ -492,6 +503,11 @@ body {
 
   .hid{
     display: none;
+  }
+
+  .github{
+    width: 100px;
+    height: 40px;
   }
 
   /* RESPONSIVE CSS */
