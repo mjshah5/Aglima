@@ -551,8 +551,7 @@ body {
 
     .header img{
       margin: auto;
-      margin-top: 15px;
-      margin-left: 15px;
+      padding: 10px 25px 0px 25px;
       display: inline-block;
     }
 
