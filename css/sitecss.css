@@ -14,7 +14,7 @@ Dated: 4/3/2020
 
 /* BODY CSS */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana !important;
 }
 
 /* HEADER CSS BEGINS FROM HERE */
@@ -326,7 +326,7 @@ body {
     font-size: 16px;
     padding: 5px 20px 20px 8px;
     border: 1px solid white;
-    margin-bottom: 38px;
+    margin-bottom: 68px;
   }
 
   .width_left2{
@@ -368,7 +368,95 @@ body {
     font-size: 16px;
     padding: 5px 20px 20px 8px;
     border: 1px solid white;
-    margin-bottom: 70px;
+    margin-bottom: 95px;
+  }
+  
+  .width_left3{
+    color: white;
+    background-color: #4d0909;
+    font-size: large;
+    top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+    padding: 30px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .width_left3:hover {
+    transform: scale(1.1);
+  }
+  
+  .width_left3 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  .width_left3 h6{
+    font-style: italic;
+    color: white;
+    font-size: small;
+    margin-bottom: 17px;
+  }
+
+  .width_left3 button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 20px 20px 8px;
+    border: 1px solid white;
+    margin-bottom: 96px;
+  }
+  
+  .width_left4{
+    color: white;
+    background-color: #4d0909;
+    font-size: large;
+    top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform .5s;
+    padding: 30px;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .width_left4:hover {
+    transform: scale(1.1);
+  }
+  
+  .width_left4 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  .width_left4 h6{
+    font-style: italic;
+    color: white;
+    font-size: small;
+    margin-bottom: 17px;
+  }
+
+  .width_left4 button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 20px 20px 8px;
+    border: 1px solid white;
+    margin-bottom: 152px;
+  }
+  
+  .space{
+	  width: 650px;
   }
 
   .width_right{
@@ -385,6 +473,20 @@ body {
 
   .width_right:hover {
     transform: scale(1.1);
+  }
+  
+  .width_right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  
+  .width_right h3{
+	  padding: 0px;
+	  margin: 0px;
+	  color: #fffb00;
   }
 
   .width_right button{
@@ -438,7 +540,7 @@ body {
    background-color: #333;
    color: white;
    text-align: center;
-   padding: 20px;
+   padding: 0px 15px 30px 15px;
    font-size: 20px;
    padding-top: 35px;
 }
@@ -596,6 +698,10 @@ body {
       transform: scale(1.0);
     }
 
+	.space{
+		width: 100%;
+	}
+	
     .width_right{
       margin-bottom: 10px;
     }
@@ -695,6 +801,10 @@ body {
     .width_left2:hover{
       transform: scale(1.0);
     }
+	
+	.space{
+		width: 100%;
+	}
 
     .width_right{
       margin-bottom: 10px;
@@ -799,6 +909,10 @@ body {
       .width_left2:hover{
         transform: scale(1.0);
       }
+	  
+	  .space{
+		width: 100%;
+	  }
   
       .width_right{
         margin-bottom: 10px;
