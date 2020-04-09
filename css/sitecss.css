@@ -697,6 +697,22 @@ body {
     .width_left2:hover{
       transform: scale(1.0);
     }
+	
+	.width_left3{
+      margin-bottom: 10px;
+    }
+
+    .width_left3:hover{
+      transform: scale(1.0);
+    }
+	
+	.width_left4{
+      margin-bottom: 10px;
+    }
+
+    .width_left4:hover{
+      transform: scale(1.0);
+    }
 
 	.space{
 		width: 100%;
@@ -799,6 +815,22 @@ body {
     }
 
     .width_left2:hover{
+      transform: scale(1.0);
+    }
+	
+	.width_left3{
+      margin-bottom: 10px;
+    }
+
+    .width_left3:hover{
+      transform: scale(1.0);
+    }
+	
+	.width_left4{
+      margin-bottom: 10px;
+    }
+
+    .width_left4:hover{
       transform: scale(1.0);
     }
 	
@@ -909,6 +941,22 @@ body {
       .width_left2:hover{
         transform: scale(1.0);
       }
+	  
+	  .width_left3{
+      margin-bottom: 10px;
+    }
+
+    .width_left3:hover{
+      transform: scale(1.0);
+    }
+	
+	.width_left4{
+      margin-bottom: 10px;
+    }
+
+    .width_left4:hover{
+      transform: scale(1.0);
+    }
 	  
 	  .space{
 		width: 100%;
